@@ -7,18 +7,30 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
-
   <header class="hero">
-    <div class="hero__content">
-      <p class="eyebrow">TCS i-Construction Hub</p>
-      <h1>計測起点で、活用まで伴走するi-Construction</h1>
-      <p class="lead">
-        レーザー・ドローン計測から図面化、BIM/CIMモデル化、活用支援まで。計測単体ではなく、業務で使える形に仕上げる統合ソリューションです。
-      </p>
-      <div class="cta-group">
-        <a class="btn primary" href="#contact">相談・問い合わせ</a>
-        <a class="btn ghost" href="#">資料ダウンロード</a>
+    <div class="hero__inner">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">TCS i-Construction Hub</p>
+          <h1>計測起点で、活用まで伴走するi-Construction</h1>
+          <p class="lead">
+            レーザー・ドローン計測から図面化、BIM/CIMモデル化、活用支援まで。計測単体ではなく、業務で使える形に仕上げる統合ソリューションです。
+          </p>
+          <div class="cta-group">
+            <a class="btn primary" href="#contact">相談・問い合わせ</a>
+            <a class="btn ghost" href="#">資料ダウンロード</a>
+          </div>
+        </div>
+
+        <figure class="hero__visual">
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <img
+            src="https://www.technopro-construction.com/wp-content/uploads/2021/05/ict-lp-main.jpg"
+            alt="都市インフラの3D可視化イメージ"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </figure>
       </div>
     </div>
   </header>
@@ -71,45 +83,57 @@
               目的・現場条件に合わせ、レーザースキャナとドローンを適切に組み合わせて計測します。
             </p>
 
-            <div class="cards">
-              <div class="card">
-                <h4>レーザースキャナ測量</h4>
-                <p>
-                  高精度な点群取得に優れ、橋梁・トンネル・プラントなど構造物中心の案件に適します。狭隘部でも精度を確保できます。
-                </p>
-                <a class="link" href="#">レーザースキャナ詳細へ</a>
+            <div class="cards cards--split">
+              <div class="card card--media">
+                <img
+                  src="https://www.technopro-construction.com/wp-content/uploads/2021/05/laser-scan.jpg"
+                  alt="レーザースキャナでの計測"
+                  loading="lazy"
+                />
+                <div class="card__body">
+                  <h4>レーザースキャナ測量</h4>
+                  <p>
+                    高精度な点群取得に優れ、橋梁・トンネル・プラントなど構造物中心の案件に適します。狭隘部でも精度を確保できます。
+                  </p>
+                  <a class="link" href="#">レーザースキャナ詳細へ</a>
+                </div>
               </div>
 
-              <div class="card">
-                <h4>ドローン測量</h4>
-                <p>
-                  広範囲を省人化して計測でき、造成・土工・河川・山間部などで有効です。飛行計画から解析まで一括対応します。
-                </p>
-                <a class="link" href="#">ドローン測量詳細へ</a>
+              <div class="card card--media">
+                <img
+                  src="https://www.technopro-construction.com/wp-content/uploads/2021/05/drone-measure.jpg"
+                  alt="ドローンによる広域計測"
+                  loading="lazy"
+                />
+                <div class="card__body">
+                  <h4>ドローン測量</h4>
+                  <p>
+                    広範囲を省人化して計測でき、造成・土工・河川・山間部などで有効です。飛行計画から解析まで一括対応します。
+                  </p>
+                  <a class="link" href="#">ドローン測量詳細へ</a>
+                </div>
               </div>
             </div>
 
             <div class="compare">
               <div class="compare__header">レーザー × ドローン比較</div>
-
-              <div class="compare__table" role="table" aria-label="レーザーとドローンの比較">
-                <div class="compare__row" role="row">
-                  <div role="cell">精度</div>
-                  <div role="cell">ミリ単位の高精度</div>
-                  <div role="cell">cm級で広域に強い</div>
+              <div class="compare__table">
+                <div class="compare__row">
+                  <div>精度</div>
+                  <div>ミリ単位の高精度</div>
+                  <div>cm級で広域に強い</div>
                 </div>
-                <div class="compare__row" role="row">
-                  <div role="cell">得意領域</div>
-                  <div role="cell">構造物、狭隘部、近接</div>
-                  <div role="cell">地形・土量、広域把握</div>
+                <div class="compare__row">
+                  <div>得意領域</div>
+                  <div>構造物、狭隘部、近接</div>
+                  <div>地形・土量、広域把握</div>
                 </div>
-                <div class="compare__row" role="row">
-                  <div role="cell">スピード</div>
-                  <div role="cell">精度優先で安定</div>
-                  <div role="cell">短時間で広面積取得</div>
+                <div class="compare__row">
+                  <div>スピード</div>
+                  <div>精度優先で安定</div>
+                  <div>短時間で広面積取得</div>
                 </div>
               </div>
-
               <p class="compare__note">
                 案件により併用し、精度と効率を両立するプランを設計します。
               </p>
@@ -119,17 +143,39 @@
           <article class="flow__step">
             <div class="badge">Step2</div>
             <h3>図面化・データ整備</h3>
-            <p>
-              取得した点群や画像から、現場・設計でそのまま使える図面やデータを作成します。座標系や精度要件を整理し、BIM/CIMにつながる中間成果物として整備します。
-            </p>
+            <div class="split">
+              <div>
+                <p>
+                  取得した点群や画像から、現場・設計でそのまま使える図面やデータを作成します。座標系や精度要件を整理し、BIM/CIMにつながる中間成果物として整備します。
+                </p>
+              </div>
+              <figure class="step-media">
+                <img
+                  src="https://www.technopro-construction.com/wp-content/uploads/2021/05/data-prep.jpg"
+                  alt="点群から図面へデータ整備"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </article>
 
           <article class="flow__step">
             <div class="badge">Step3</div>
             <h3>BIM/CIMモデル化・活用支援</h3>
-            <p>
-              設計検討・合意形成・施工計画に活用できるBIM/CIMモデルを作成。モデル単体の提供から属性付与、検討資料作成、発注者説明用可視化、施工計画シミュレーションまで伴走します。
-            </p>
+            <div class="split">
+              <div>
+                <p>
+                  設計検討・合意形成・施工計画に活用できるBIM/CIMモデルを作成。モデル単体の提供から属性付与、検討資料作成、発注者説明用可視化、施工計画シミュレーションまで伴走します。
+                </p>
+              </div>
+              <figure class="step-media">
+                <img
+                  src="https://www.technopro-construction.com/wp-content/uploads/2021/05/bim-model.jpg"
+                  alt="BIM/CIMモデルの可視化"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </article>
         </div>
       </div>
@@ -144,20 +190,51 @@
 
         <div class="scene-grid">
           <div class="scene">
-            <h4>発注前検討</h4>
-            <p>現況把握、概算算出、リスク検討資料の作成を支援。</p>
+            <img
+              src="https://www.technopro-construction.com/wp-content/uploads/2021/05/planning.jpg"
+              alt="発注前の現況把握"
+              loading="lazy"
+            />
+            <div class="scene__body">
+              <h4>発注前検討</h4>
+              <p>現況把握、概算算出、リスク検討資料の作成を支援。</p>
+            </div>
           </div>
+
           <div class="scene">
-            <h4>設計・計画</h4>
-            <p>地形・構造物の精度確認、設計案比較、合意形成に活用。</p>
+            <img
+              src="https://www.technopro-construction.com/wp-content/uploads/2021/05/design.jpg"
+              alt="設計検討のレビュー"
+              loading="lazy"
+            />
+            <div class="scene__body">
+              <h4>設計・計画</h4>
+              <p>地形・構造物の精度確認、設計案比較、合意形成に活用。</p>
+            </div>
           </div>
+
           <div class="scene">
-            <h4>施工</h4>
-            <p>出来形把握、施工計画の検証、干渉チェック、進捗確認に対応。</p>
+            <img
+              src="https://www.technopro-construction.com/wp-content/uploads/2021/05/construction.jpg"
+              alt="施工管理の様子"
+              loading="lazy"
+            />
+            <div class="scene__body">
+              <h4>施工</h4>
+              <p>出来形把握、施工計画の検証、干渉チェック、進捗確認に対応。</p>
+            </div>
           </div>
+
           <div class="scene">
-            <h4>維持管理（将来）</h4>
-            <p>点検データ蓄積、変状モニタリング、デジタルツイン化の基盤に。</p>
+            <img
+              src="https://www.technopro-construction.com/wp-content/uploads/2021/05/maintenance.jpg"
+              alt="維持管理のモニタリング"
+              loading="lazy"
+            />
+            <div class="scene__body">
+              <h4>維持管理（将来）</h4>
+              <p>点検データ蓄積、変状モニタリング、デジタルツイン化の基盤に。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -196,7 +273,9 @@
           <div class="pill">デジタルツイン</div>
         </div>
 
-        <p class="note">近い将来の拡張領域として検討中のテーマです。詳細設計は個別に協議します。</p>
+        <p class="note">
+          近い将来の拡張領域として検討中のテーマです。詳細設計は個別に協議します。
+        </p>
       </div>
     </section>
 
